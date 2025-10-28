@@ -8,12 +8,25 @@
     <link rel="stylesheet" href="./style.css">
     <link rel="icon" href="./img/無題452_20250920225101.png">
 </head>
+<script>
+  const hamburger = document.getElementById("hamburger");
+  const navgroup = document.getElementById("navgroup");
+
+  hamburger.addEventListener("click", () => {
+    navgroup.classList.toggle("show");
+  });
+</script>
 <body>
 
 <div class="header">
   <div class="header__inner">
       <a href="./index.html"><img class="header__logo" src="img/無題463_20251012231112.png" alt="OKINAWA METRO"></a>
-    <div class="header__navgroup">
+    <div class="header__hamburger" id="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+      <div class="header__navgroup">
       <div class="header__navitem"><a href="html/routemap.html">路線</a></div>
       <div class="header__navitem"><a href="html/train-type.html">運行種別/停車駅</a></div>
       <div class="header__navitem"><a href="html/train.html">車両</a></div>
