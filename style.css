@@ -238,3 +238,17 @@ a:hover {
   color: #6c6c6c;
   margin-top: 0px;
 }
+
+@media (max-width: 600px) {
+  body {
+    max-width: 600;
+  }
+  .header__inner{
+  max-width: 600px;
+  width: 90%;
+  height: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+}
