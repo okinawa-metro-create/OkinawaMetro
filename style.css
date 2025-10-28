@@ -1,0 +1,240 @@
+@charset "utf-8";
+/* これがcssだよ！ */
+
+a{
+  text-decoration:none;
+}
+a{
+    color: rgb(29, 29, 29);
+  text-decoration: none;
+}
+.header__logo{
+    margin-top: 5px;
+}
+.header{
+  margin-top: 20px;
+  position: static;
+  top: 0;
+  left: 0;
+  max-width :100%;
+  height: 70px;
+  background-color: rgb(234, 234, 234);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+a:hover {
+  color: rgb(50, 50, 50);
+  font-weight: bold;
+}
+
+.header__inner{
+  max-width: 1152px;
+  width: 90%;
+  height: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.header__logo{
+  flex: none;
+  width: auto;
+  height: 100px;
+}
+.header__navgroup{
+  margin-left: auto;
+  display: flex;
+  flex: none;
+}
+.header__navgroup > * + *{
+  margin-left: 60px;
+}
+.header__navitem{
+  font-size: 16px;
+  color: #fff;
+}
+
+.運行情報{
+    color:blue;
+    font-weight: bold;
+}
+
+.新型車両{
+    font-weight: bold;
+}
+.NewTrain{
+    color:orange;
+    font-size:medium;
+}
+
+.こちら{
+    color: rgb(29, 29, 29);
+    text-decoration:underline
+}
+
+.status {
+  background-color: white;
+
+    border-left: 5px solid #004080;
+    box-shadow: -2px 0 6px rgb(209, 209, 209);
+    border-radius: 5px;
+      margin: 0px;
+  padding: 5px;
+  max-width: 700px;
+}
+
+.status ul {
+  list-style: none;
+  padding: 0;
+}
+
+.status li {
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+
+.normal {
+  background-color: #ffffff;
+  color: #363636;
+  max-width: 300px;
+  font-size: 15px;
+}
+
+.delay {
+  background-color: #fff8dc;
+  color: #cc6600;
+}
+
+.suspend {
+  background-color: #ffe0e0;
+  color: #990000;
+}
+
+.notice {
+  background-color: #ffffcc;
+  margin: 20px;
+  padding: 20px;
+  border-left: 5px solid #999900;
+}
+
+.syubetsu {
+  background-color:rgb(209, 209, 209);
+  width: 51px;
+}
+
+.footer {
+  background-color: rgb(209, 209, 209); /* ベースのグレー */
+  background: linear-gradient(135deg, #d1d1d1, #bfbfbf); /* 斜めグラデーションで奥行き */
+  padding: 20px;            /* 上下左右の余白を広めにしてゆったり */
+  color: #333;               /* 文字色を少し濃いめに */
+  text-align: center;        /* 中央揃え */
+  font-size: 0.8em;          /* フッター文字を少し小さめに */
+  box-shadow: 0 -2px 5px rgba(0,0,0,0.1); /* 上から軽く影をつけて浮かせる */
+}
+
+
+.syubetsu2 {
+  background-color: rgb(207, 243, 255); /* 水色 */
+  padding: 10px 15px; /* 上下10px、左右15pxにして少しゆったり */
+  border-radius: 8px; /* 角を丸くして柔らかい印象に */
+  box-shadow: 2px 2px 6px rgba(0,0,0,0.2); /* 軽い影で浮いてる感じに */
+  font-weight: bold; /* 文字を少し強調 */
+  font-size: 1.2em; /* 少し大きめで目立たせる */
+}
+
+.town1{
+  font-weight: 400;
+}
+
+.title {
+  display: inline-block;       /* 文字幅に合わせる */
+  position: relative;          /* 下線を装飾用に位置調整できるように */
+  font-size: 1.5em;            /* 少し大きめで目立たせる */
+  font-weight: bold;           /* 太字で存在感アップ */
+  padding-bottom: 5px;         /* 下線と文字の間に余白を追加 */
+  color: #0077cc;              /* 文字色を水色系にして沖縄っぽく */
+}
+
+.title::after {
+  content: "";                 /* 擬似要素で装飾線を追加 */
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 4px;                 /* 線を少し太めに */
+  background: linear-gradient(90deg, #00cfff, #0077cc); /* グラデーションで華やかに */
+  border-radius: 3px;          /* 線の端を丸く */
+}
+
+
+.gaiyou{
+  font-weight: bold;
+  height: 20px;
+}
+
+.show{
+  display: flex;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.show .card{
+  flex: none;
+  margin-right: 50px;
+}
+
+.show img{
+  width: 200px;
+
+}
+
+.uchica-img{
+  margin-bottom: -0.25%;
+}
+
+.oshirase{
+  background-color:rgb(226, 248, 255);
+  padding: 5px;
+  border-radius: 20px;
+}
+
+.campaign-card {
+  background: linear-gradient(145deg, #ecfaff, #cfefff); /* 爽やか水色グラデーション */
+  border-left: 6px solid #56b8fe; /* 左側アクセント線 */
+  border-radius: 5px; /* 角丸で柔らかい印象 */
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* 軽い影で浮き上がる */
+  padding: 15px; /* 内側の余白を広めに */
+  margin: 5px 0; /* 上下に余白 */
+  max-width: 700px; 
+  transition: transform 0.2s ease; /* ホバーでちょっと動く */
+}
+
+.campaign-card:hover {
+  transform: translateY(-3px); /* マウスを乗せると少し浮く感じ */
+  box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+}
+
+
+.campaign-card2 {
+  background: linear-gradient(145deg, #ecfff4, #cfffde); /* 爽やか水色グラデーション */
+  border-left: 6px solid #59e783; /* 左側アクセント線 */
+  border-radius: 5px; /* 角丸で柔らかい印象 */
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* 軽い影で浮き上がる */
+  padding: 15px; /* 内側の余白を広めに */
+  margin: 5px 0; /* 上下に余白 */
+  max-width: 700px; 
+  transition: transform 0.2s ease; /* ホバーでちょっと動く */
+}
+
+.campaign-card2:hover {
+  transform: translateY(-3px); /* マウスを乗せると少し浮く感じ */
+  box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+}
+
+.kome{
+  font-size: 10px;
+  color: #6c6c6c;
+  margin-top: 0px;
+}
