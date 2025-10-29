@@ -117,26 +117,27 @@ body {
   }
 
 .header__navgroup {
-    display: flex;
-    flex-direction: column;
     position: absolute;
     top: 90px; /* ロゴの下 */
     right: 0;
     width: 200px;
     background-color: rgb(234, 234, 234);
+    flex-direction: column;
     padding: 10px;
     box-sizing: border-box;
 
     /* アニメーション用 */
-    max-height: 0;          /* 初期は見えない */
-    overflow: hidden;       /* はみ出た部分を隠す */
-    transition: max-height 0.4s ease; /* 滑らかに開く */
+    transform: translateY(-20px); /* 上に隠す */
+    opacity: 0;                   /* 透明にする */
+    pointer-events: none;         /* 閉じてる時はクリックできない */
+    transition: transform 0.3s ease, opacity 0.3s ease;
 }
 
 .header__navgroup.show {
-    max-height: 500px; /* メニューが全部表示される高さに調整 */
-    display: flex;
-  }
+    transform: translateY(0);     /* 元の位置に */
+    opacity: 1;                   /* 見えるように */
+    pointer-events: auto;         /* 開いてる時はクリックできる */
+}
 
   .header__navgroup > * + * {
     margin-left: 0;
