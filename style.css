@@ -131,7 +131,14 @@ body {
     opacity: 0;                   /* 透明にする */
     pointer-events: none;         /* 閉じてる時はクリックできない */
     transition: transform 0.3s ease, opacity 0.3s ease;
+
+    /* ここを追加 */
+    z-index: 9999;            /* 文字も背景も前面に */
+    color: #333;              /* 文字色 */
+    border-radius: 5px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
 }
+
 
 .header__navgroup.show {
     transform: translateY(0);     /* 元の位置に */
