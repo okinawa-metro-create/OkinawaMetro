@@ -343,3 +343,16 @@ body {
     max-width: 500;
   }
 }
+
+.kensaku{
+  background-color: #a0dcfa;
+  border:#000000 1px solid;
+  border-radius: 4px;  
+  padding:3px 6px;
+}
+
+
+.kensaku:hover{
+  background-color: #79c1f7;
+  cursor: pointer;
+}
