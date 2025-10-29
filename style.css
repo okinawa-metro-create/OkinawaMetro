@@ -107,7 +107,7 @@ body {
     width: 25px;
     height: 25px;
     cursor: pointer;
-    margin-left: auto; /* ← 右側に寄せる！これがポイント！ */
+    margin-left: auto; /* ← 右側に寄せる */
   }
 
   .header__hamburger span {
@@ -116,17 +116,18 @@ body {
     border-radius: 2px;
   }
 
-  .header__navgroup {
+.header__navgroup {
     display: none;
     position: absolute;
-    top: 70px;
+    top: 90px; /* ロゴぶん下げた */
     right: 0;
     width: 200px;
     background-color: rgb(234, 234, 234);
     flex-direction: column;
     padding: 10px;
     box-sizing: border-box;
-  }
+    z-index: 1000; /* 念のため最前面に */
+}
 
   .header__navgroup.show {
     display: flex;
