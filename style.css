@@ -117,19 +117,24 @@ body {
   }
 
 .header__navgroup {
-    display: none;
+    display: flex;
+    flex-direction: column;
     position: absolute;
-    top: 90px; /* ロゴぶん下げた */
+    top: 90px; /* ロゴの下 */
     right: 0;
     width: 200px;
     background-color: rgb(234, 234, 234);
-    flex-direction: column;
     padding: 10px;
     box-sizing: border-box;
-    z-index: 1000; /* 念のため最前面に */
+
+    /* アニメーション用 */
+    max-height: 0;          /* 初期は見えない */
+    overflow: hidden;       /* はみ出た部分を隠す */
+    transition: max-height 0.4s ease; /* 滑らかに開く */
 }
 
-  .header__navgroup.show {
+.header__navgroup.show {
+    max-height: 500px; /* メニューが全部表示される高さに調整 */
     display: flex;
   }
 
