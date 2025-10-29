@@ -178,7 +178,7 @@ body {
 }
 
 .status {
-  background-color: white;
+  background-color: rgb(255, 255, 255);
 
     border-left: 5px solid #004080;
     box-shadow: -2px 0 6px rgb(209, 209, 209);
@@ -200,8 +200,8 @@ body {
 }
 
 .normal {
-  background-color: #ffffff;
-  color: #363636;
+  background-color: #ebffe2;
+  color: #39ab00;
   max-width: 300px;
   font-size: 15px;
 }
