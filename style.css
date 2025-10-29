@@ -345,7 +345,7 @@ body {
 }
 
 .kensaku{
-  background-color: #a0dcfa;
+  background-color: #dddddd;
   border:#000000 1px solid;
   border-radius: 4px;  
   padding:3px 6px;
@@ -353,6 +353,6 @@ body {
 
 
 .kensaku:hover{
-  background-color: #79c1f7;
+  background-color: #b7e0ff;
   cursor: pointer;
 }
