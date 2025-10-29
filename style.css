@@ -79,26 +79,57 @@ a:hover {
   border-radius: 2px;
 }
 
+body {
+  overflow-x: hidden;
+}
+
+
 /* スマホ用メディアクエリ */
+
+
 @media (max-width: 768px) {
-  .header__navgroup {
-    display: none; /* 初期は非表示 */
-    position: absolute;
-    top: 70px;
-    right: 0;
-    width: 170px;
-    background-color: rgb(234, 234, 234);
-    flex-direction: column;
-    padding: 10px;
+  .header__inner {
+    width: 100%;
+    justify-content: space-between; /* 左右に広げる配置 */
+    align-items: center;
+    padding: 0 15px; /* 画面端に少し余裕 */
+    box-sizing: border-box;
   }
 
-  .header__navgroup.show {
-    display: flex; /* 開いた時に表示 */
+  .header__logo {
+    margin-top: 5px;
   }
 
   .header__hamburger {
-    display: flex; /* スマホで表示 */
-    margin-left: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+    margin-left: auto; /* ← 右側に寄せる！これがポイント！ */
+  }
+
+  .header__hamburger span {
+    height: 3px;
+    background-color: #333;
+    border-radius: 2px;
+  }
+
+  .header__navgroup {
+    display: none;
+    position: absolute;
+    top: 70px;
+    right: 0;
+    width: 200px;
+    background-color: rgb(234, 234, 234);
+    flex-direction: column;
+    padding: 10px;
+    box-sizing: border-box;
+  }
+
+  .header__navgroup.show {
+    display: flex;
   }
 
   .header__navgroup > * + * {
